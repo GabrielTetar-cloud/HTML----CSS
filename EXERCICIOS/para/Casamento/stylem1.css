@@ -1,0 +1,92 @@
+@charset "UTF-8";
+:root{
+
+    --cor0
+    --cor1
+    --cor2
+    --cor3
+    --cor4
+    --cor5
+
+    --fontpadrao
+    --fontestilo
+    --fontespecial
+}
+
+
+main{
+    background-color: ;
+    color;
+    padding: 
+    box-shadow: ;
+    font family
+    font size
+
+}
+header{
+    padding: 10px;
+}
+header >h1{
+    padding: 8px;
+
+}
+header> p{
+
+}
+nav{
+
+}
+nav >a{
+
+}
+nav >a:hover{
+
+}
+
+
+main >h1{
+
+
+}
+main >h2{
+    background-color: ;
+    color;
+    padding: 
+    box-shadow: ;
+    font family
+    font size
+
+    
+}
+div.video{
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+div.video >iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+.destaque{
+
+}
+.qualidades{
+
+}
+.aniversario{
+
+}
+
+
+
+footer{
+
+}
+footer> a{
+
+}

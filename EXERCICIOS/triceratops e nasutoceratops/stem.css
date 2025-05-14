@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face{
+    font-family:'dinp';
+    src: url('/FK_Dino.otf') format('opentype');
+    font-weight: normal;
+  
+}
+
+:root{
+    --cordestaque:#617E4A;
+    --cordefundo:#697A1A;
+    --cor01:#948568;
+    --cor02:#754F1E;
+    --cor03:#98704C;
+
+
+    --font-padrao:Arial,Helvetica,Verdana,sans-serif;
+    --fontdestque:'dino',cursive;
+
+}
+body{
+    background-color:var(--cordefundo) ;
+    padding: 8px;
+
+}
+
+header{
+    background-color: var(--cor03);
+    border-radius: 5px;
+    padding: 10px;
+    margin:8px
+    
+
+}
+header>h1{
+   
+    font: var(--fontdestaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px  2px 0px rgba(0, 0, 0, 0.266);
+
+}
+header>p{
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+    
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px  2px 0px rgba(0, 0, 0, 0.312);
+
+}
+
+
+nav{
+    background-color: var();
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.182);
+
+
+    
+}
+nav > a{
+   
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color:var(--cor02);
+    color: var(--cor03);
+
+}
+
+main{
+    background-color:
+}
+main p{
+    padding: 10px;
+    margin: auto;
+    background-color: var(--cor02);
+    border-radius: 5px;
+}
+main>h1{
+    color:white ;
+    font:var(--fontdestaque)
+
+    min-width:320px ;
+           max-width: 800px;
+           margin: auto;
+           padding: 10px;
+           box-shadow: 0px 0px rgba(0, 0, 0, 0.426);
+}
+main h2{
+    padding: 5px;
+
+}
+main img{
+    width: 100%;
+}
+.triceratops{
+    background-color: var(--cor01);
+   
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: justify;
+
+}
+.nasutoceratops{
+    background-color: var(--cor02);
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: justify;
+}
+ aside {font: var(--font-padrao);
+text-align: justify;
+padding: 10px;
+margin: 5px;
+ }
+aside a:hover{
+    background-color: var(--cor02);
+    color: var(--cor03);
+
+}
+footer{
+    font: var(--font-padrao);
+    text-align: justify;
+    padding: 10px;
+    margin: 5px;
+
+}
+footer a{
+    
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+
+}
