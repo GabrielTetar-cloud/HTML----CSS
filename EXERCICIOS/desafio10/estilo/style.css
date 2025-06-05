@@ -63,7 +63,7 @@ header > h1{
    
 
 }
-head >p{
+header >p{
     font-size: 1.2em;
     font-family: var(--font-padrao);
     color: white;
