@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -10,8 +11,8 @@
     --cor4:#D9A59A;
     --cor5:#59322E;
 
-    --fonpadrao:Arial Helvetica Sans-serif;
-    --fontdecorativa:;
+    --fonpadrao:Verdana, Geneva, Tahoma, sans-serif;
+    --fontdecorativa:"Sevillana", cursive;
 }
 body{
     min-height: 100vh;
@@ -19,7 +20,10 @@ body{
 
 }
 section{
-
+padding-top: 10vh;
+    font-family: var(--fontdecorativa);
+    padding-bottom: 10vh;
+    font-size: 1.5em;
 }
 header{
     background-color: var(--cor5);
@@ -31,6 +35,8 @@ header{
 header>h1{
     padding-top: 30px;
     font-variant: small-caps;
+    font-family: var(--fonpadrao);
+    font-size: 10vw;
 }
 header>p{
     padding-bottom: 30px;
