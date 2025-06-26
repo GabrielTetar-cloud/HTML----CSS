@@ -6,7 +6,7 @@
 }
 :root{
     --cor1:#A61458;
-    --cor2:#D9308D;
+    --cor2:#d9308dd8;
     --cor3:#F244B5;
     --cor4:#D9A59A;
     --cor5:#59322E;
@@ -19,12 +19,10 @@ body{
     background-color: var(--cor5);
 
 }
-section{
-padding-top: 10vh;
-    font-family: var(--fontdecorativa);
-    padding-bottom: 10vh;
-    font-size: 1.5em;
-}
+
+
+
+
 header{
     background-color: var(--cor5);
     color: white;
@@ -50,28 +48,54 @@ header a,footer a{
 header a:hover, footer a:hover{
     text-decoration: dashed
 }
+
 section{
     padding-top: 10vh;
+    font-family: var(--fontdecorativa);
     padding-bottom: 10vh;
-    line-height: 2.5em;
-    padding-left: 25px;
-    font-size: 3.5vw;
+    font-size: 3vw;
+}
+section>p{
+    padding-bottom: 2em;
 }
 section.normal{
-    background-color:var(--cor2);
-    color: white;
+ background-color: var(--cor2);
+    color: black;
+    line-height: 2em;
+    padding-left: 25px;
 
 }
 section.imagem{
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     color: white;
-    
-    
+     box-shadow: inset 6px 6px 13px black;
+     background-size: cover;
+     
+
 }
 section.imagem>p{
-    display: inline-block;
-    padding: 6px;
-    background-color: var(--cor4);
+   display: inline-block;
+   padding: 6px;
+    background-color:var(--cor2);
+    text-shadow: 2px 2px 0px black;
+}
+section#img001{
+    background-image: url(../imagens/IMG_20250623_154301.jpg);
+    background-position:  center top;
+     background-attachment: fixed;
+  
+  
+
+
+}
+section#img002{
+    background-image: url(../imagens/sheet-music-8578311_640.jpg);
+    background-position: center top;
+     background-attachment: fixed;
+  
+   
+    
+
 }
 footer{
 background-color: var(--cor4);
