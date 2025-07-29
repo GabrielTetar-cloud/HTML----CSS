@@ -20,9 +20,14 @@
             text-align:right;
 
         }
-        tbody> tr:nth-child(2n){
-            background-color: lightgray;
+        tbody> tr:nth-child(even){/*2n*/
+            background-color: white;
+            text-decoration: underline;
 
+        }
+        tbody> tr:nth-child(odd){ /*2n-1*/
+            background-color:lightgray ;
+            font-weight: bold;
         }
         caption{
             border: 1px solid black;
@@ -37,7 +42,7 @@
             color: white;
         }
         tbody{
-            background-color: chocolate;
+            background-color: rgb(8, 37, 223);
         }
 
     </style>
