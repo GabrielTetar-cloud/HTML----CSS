@@ -93,10 +93,31 @@ section#img002{
     background-position: center top;
      background-attachment: fixed;
   
-   
+
     
 
 }
+table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 700px;
+            border-collapse: collapse;
+            background-color: var(--cor3);
+        }
+        td,th{
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+        th.titulo{
+            font-weight: bold;
+            text-align: center;
+            
+        }   
+        caption{
+             padding: 10px;
+            
+            font-weight: bold;
+        }
 footer{
 background-color: var(--cor4);
 text-align: center;
