@@ -4,9 +4,10 @@
     margin: 0px;
 }
 :root{
-    --cor1:;
-    --cor2:;
-    --cor3:;
+    --cor1:#D95276;
+    --cor2:#730202;
+    --cor3:#D99152;
+    --cor4:#D9D8D7;
 
     --font:;
 }
@@ -18,37 +19,45 @@ body,html{
 header{
     height: 200px;
     width: 100vw;
-    background-color: blueviolet;
-    padding-top: 10px;
+    background-color: var(--cor1);
+    padding-top: 20px;
     color: white;
     text-align: center ;
     box-sizing: border-box;
 }
 nav{
      height: 50px;
+     padding: 20px;
      width: 100vw;
      text-align: center;
+     background-color: var(--cor3);
+     border-radius: 2px;
 }
 nav>a{
-    padding: 5px;
+    padding: 15px;
     margin: 50px;
 }
 nav>a:hover{
     border: 2px 2px 3px rgba(0, 0, 0, 0.341);
     transform: translate();
+    background-color: var(--cor4);
 
 }
 main{
     position: relative;
-    background-color:;
+    background-color:var(--cor2);
     height: 1000px;
     margin: auto;
    
 }
 
-main>img{
+img{
     position: relative;
-    width: 100px;
-    height: 100px;
+    text-align: center;
+    width: 300px;
+    height: 150px;
     border: 2px;
+}
+input{
+    padding: 5px;
 }
