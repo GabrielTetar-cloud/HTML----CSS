@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="imagens/Farmacia1.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Cadastro de usuario</h1>
+    <div class="contact-form">
+        <form action="cadastro.php" autocomplete="on" method="post">
+            <p>
+                <label for="inome">Nome</label> <input type="text" id="inome" name="nome" autocomplete="username" required minlength="3" maxlength="16" placeholder="Nome de usuario">
+            </p>
+            <p>
+                <label for="itelefone">Telefone</label> <input type="text" id="itelefone" name="Telefone" required min="9" maxlength="15" placeholder="Telefone">
+            </p>
+            <p>
+                <label for="isenha"> Senha</label><input type="password" id="isenha"  minlength="8" maxlength="20" placeholder="Senha" autocomplete="new-password">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

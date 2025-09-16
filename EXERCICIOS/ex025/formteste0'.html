@@ -8,15 +8,21 @@
 <body>
   <h1>Meu segundo formulario</h1>
 
-  <form action="cadastro.php" autocomplete="off" method="POST">
+  <form action="cadastro.php" autocomplete="on" method="POST">
 
-     <p><label for="inome">Nome</label> <input type="text" id="inome" name="nome"></p>
+     <p><label for="inome">Nome</label> <input type="text" id="inome" name="nome" required minlength="5" maxlength="16" placeholder="nome" autocomplete="name" ></p>
 
-     <p><label for="isobrenome">Sobrenome</label> <input type="text" id="isobrenome" name="sobrenome"></p>
+     <p><label for="isobrenome">Sobrenome</label> <input type="text" id="isobrenome" name="sobrenome"required minlength="5" maxlength="20" placeholder="sobrenome "></p>
 
-     <p><label for="iidade">Idade </label><input type="number" id="iidade" name="idade"></p>
+     <p><label for="iidade">Idade </label><input type="number" id="iidade" name="idade"required minlength="2" maxlength="2" placeholder="Idade" size="10"></p>
+     <p>
+       <label for="Isenha">Senha</label><input type="password" id="isenha" name="senha" required minlength="8" maxlength="16" placeholder="Minimp  8 digitos" size="10" autocomplete="new-password">
+     </p>
 
-     <p> <input type="submit" value="Enviar"></p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
 
   </form>
 </body>

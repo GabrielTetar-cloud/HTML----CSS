@@ -61,3 +61,28 @@ img{
 input{
     padding: 5px;
 }
+.form-submit {
+    display: inline-block;
+    background: var(--cor1);
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 5px 5px;
+    border-radius: 10px;
+
+    margin:15px;
+    cursor: pointer;
+}
+.form-submit:hover {
+    background: var(--cor4);
+}
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: inline-flex;
+    margin-left: 25px;
+}
+.form-group:last-child {
+    margin-bottom: 0;
+}
