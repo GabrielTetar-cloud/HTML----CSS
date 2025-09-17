@@ -14,10 +14,13 @@
 
      <p><label for="isobrenome">Sobrenome</label> <input type="text" id="isobrenome" name="sobrenome"required minlength="5" maxlength="20" placeholder="sobrenome "></p>
 
-     <p><label for="iidade">Idade </label><input type="number" id="iidade" name="idade"required minlength="2" maxlength="2" placeholder="Idade" size="10"></p>
+     <p><label for="iidade">Idade </label> <input type="number" id="iidade" name="idade" required min="0" max="100" placeholder="" value="1"></p>
      <p>
        <label for="Isenha">Senha</label><input type="password" id="isenha" name="senha" required minlength="8" maxlength="16" placeholder="Minimp  8 digitos" size="10" autocomplete="new-password">
      </p>
+     <p><label for="idata">Data de Nascimento</label><input type="date" id="idata" name="data"required placeholder="" value="2025-9-15" ></p>
+     <p> <label for="imes">Mes que criou a conta</label> <input type="month" id="imes" name="mes" required placeholder="" value="2025-09"></p>
+     <p> <label for="ihora">Hora</label><input type="time" id="ihora" name="hora" required placeholder="" value="12:00"></p>
 
     <p>
       <input type="submit" value="Enviar">
