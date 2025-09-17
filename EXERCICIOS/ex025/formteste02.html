@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <h2>Formulario aluno</h2>
+    <form action="cadastro.php" autocomplete="on" method="post"  >
+         <p>
+            <label for="inome">Nome</label>
+            <input type="text" id="inome" name="nome" required maxlength="30" minlength="3" autocomplete="name" placeholder="Nome" >
+         </p>
+         <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required maxlength="20" minlength="8" autocomplete="current-password" placeholder="Sua senha" >
+         </p>
+         <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" id="imes" name="mes" required placeholder="Mes da prova"  value="09-2025">
+         </p>
+         <p>
+            <label for="imedia">Nota</label>
+            <input type="number" id="imedia" name="media" required placeholder="Media da prova" min="0" max="10" step="0.1" value="6">
+         </p>
+         <p>
+            <label for="iano">Ano</label>
+            <input type="date" id="iano" name="ano" required placeholder="Ano da prova" value="17-09-2025" >
+         </p>
+         <p>
+            <label for="ihora">Hora</label>
+            <input type="time" id="ihora" name="hora" placeholder="Hora da prova" value="13:00">
+         </p>
+         <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+         </p>
+
+    </form>
+</body>
+</html>
