@@ -34,6 +34,56 @@
             <p>
                 <label for="itel">Telefone</label>
                 <input type="tel" id="itel" name="tel" required placeholder="(xx)xxxxxxx" pattern="^(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+
+            </p>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" id="iprof" name="prof"list="listprof" >
+                <datalist id="listprof">
+                    <option >Administrador</option>
+                    <option >Desenvolvedor</option>
+                    <option>Medico</option>
+                    <option >Chefe de cozinha</option>
+                    <option >Enegnheiro de software</option>
+
+                </datalist>
+
+            </p>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="est" id="iest">
+                    <optgroup label="A-G">
+                        <option value="Ac">Acre</option>
+                        <option value="Al">Alagoas</option>
+                        <option value="Ap">Amapá</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceara</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goias</option>
+                    </optgroup>
+                    <optgroup label="H-P">
+                        <option value="Ma">Maranhã</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">MAto Grosso do Sul</option>
+                        <option value="PA">Para</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="PR">Parana</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piaui</option>
+                    </optgroup>
+                    <optgroup label="R-Z">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondonia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                </select>
             </p>
         </fieldset>
         <fieldset>
@@ -65,6 +115,10 @@
            <p>
             <label for="isat">Nivel de satisfação</label>
             <input type="range" id="isat" name="sat" min="1" max="10" required>
+           </p>
+           <p>
+            <label for="imsg">Como avalia seu atendimento:</label><br>
+            <textarea name="msg" id="imsg" cols="40" rows="15" placeholder="Sua avaliação" ></textarea>
            </p>
 
         </fieldset>

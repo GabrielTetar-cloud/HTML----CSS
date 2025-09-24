@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Meu quinto formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <fieldset>
+            <legend>Cadastro Aluno</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" id="inome" name="nome" minlength="3" maxlength="20" required placeholder="Seu nome" autocomplete="name">
+            </p>
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="1" max="100" required placeholder="Sua idade">
+            </p>
+            <p>
+                <label for="">Sexo</label>
+                <input type="radio" id="isexm" name="sexm" > <label for="isexm">Masculino</label>
+                <input type="radio" id="isexf" name="sexf"> <label for="isexf">Feminino</label>
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" id="isenha" name="senha" minlength="8" maxlength="20" required placeholder="Sua senha" autocomplete="new-password">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" id="iemail" name="email" required placeholder="Seu email" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" id="itel" name="tel" required placeholder="(xx)xxxxxxx"pattern="^(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+            </p>
+            <p>
+                <label for="iprof">Profissão</label>
+                <input type="text" id="iprof" name="prof" placeholder="Sua profissão" required list="listprof" >
+                <datalist id="listprof">
+                    <option >Enegnheiro</option>
+                    <option >Medico</option>
+                    <option >Advogado</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="est" id="iest">
+                    <optgroup label="Regiao Sudeste">
+                        
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio De Janeiro</option>
+                        <option value="SP">São PAulo</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Parana</option>
+                        <option value="RS">Rio Grande Do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cadastro da prova</legend>
+            <p>
+                <label for="imedia">Media</label>
+                <input type="number" id="imedia" name="media" min="0" max="10" required value="5" step="0.1" >
+            </p>
+            <p>
+                <label for="ipl">Periodo Letivo</label>
+                <input type="month" id="ipl" name="pl" value="2025-09" required>
+            
+            </p>
+            <p>
+                <label for="iano">Dia</label>
+                <input type="date" id="iano" name="dia" value="2025-09-24" required>
+            </p>
+            <p>
+                <label for="ihora">Horario</label>
+                <input type="time" id="ihora" name="hora" value="10:00" required>
+            </p>
+            <p>
+                <label for="icor">Cor</label>
+                <input type="color" id="icor" name="cor" value="#FF0000">
+            </p>
+            <p>
+                <label for="isat">Satisfação</label>
+                <input type="range" id="isat" name="sat" max="10" required step="2">
+            </p>
+            <p>
+                <label for="iarq">Anexe o arquivo da prova</label>
+                <input type="file" id="iarq" name="arq">
+            </p>
+            <p>
+                <label for="imsg">Avalie seu atendimento</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="20" placeholder="Digite aqui"></textarea>
+            </p>
+        </fieldset> 
+        <fieldset>
+            <legend>Materias da prova</legend>
+            <input type="checkbox" id="ifis" name="fis" checked> <label for="ifis">Fisica</label>
+            <input type="checkbox" id="imat" name="mat"> <label for="imat">MAtematica</label>
+            <input type="checkbox" id="iq" name="qui"> <label for="iq">Quimica</label> <br>
+            <input type="checkbox" id="ipython" name="py" > <label for="ipython">Python</label>
+            <input type="checkbox" id="ijs" name="js"> <label for="ijs">Java-Script</label>
+            <input type="checkbox" id="iphp" name="pho"> <label for="iphp">Php</label> <br>
+            <input type="checkbox" id="ibd" name="bd"> <label for="ibd">Banco de dados</label>
+            <input type="checkbox" id="iot" name="iot"><label for="iot">IOT</label>
+            <input type="checkbox" id="ima" name="ma"> <label for="ima">Metodos Ageis</label>
+
+        </fieldset>
+
+
+
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
