@@ -87,7 +87,9 @@
             </p>
             <p>
                 <label for="isat">Satisfação</label>
-                <input type="range" id="isat" name="sat" max="10" required step="2">
+                <input type="range" id="isat" name="sat" max="10" required step="2" oninput="inum.innerHTML = Number(isat.value)">
+               
+                <output id="inum">0</output>
             </p>
             <p>
                 <label for="iarq">Anexe o arquivo da prova</label>

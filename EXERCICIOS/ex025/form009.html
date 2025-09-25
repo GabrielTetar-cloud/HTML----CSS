@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Meu nono formulario</h1>
+    <form action="cadastro.php" method="get">
+<fieldset>
+    <legend>Operações matematicas</legend>
+    
+            <p>
+                <label for="in1">Numero 1:</label>
+                <input type="number" id="in1" name="n1" required min="0" max="1000" oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)">
+    
+            </p>
+            <p>
+                 <label for="in2">Numero 2:</label>
+                 <input type="number" id="in2" name="n2" required min="0" max="1000" oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)">
+            </p>
+            <p>
+                <label for="idiv">Divisão</label>
+                <output id="idiv">0</output>
+            </p>
+            <p>
+                <label for="in3">Numero 3:</label>
+                <input type="number" id="in3" name="n3" required min="0" max="1000" oninput="imult.innerHTML = Number(in4.value) * Number(in3.value)">
+            </p>
+            <p>
+                <label for="in4">Numero 4:</label>
+                <input type="number" id="in4" name="n4" required min="0" max="1000" oninput="imult.innerHTML = Number(in4.value) * Number(in3.value)">
+            </p>
+            <p>
+                <label for="imult">Multiplicação:</label>
+                <output id="imult">0</output>
+            </p>
+</fieldset>
+        <p>
+            <label for="inum">Numero</label>
+            <input type="range" id="inum" name="num" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <fieldset>
+            <legend>Descobri idade</legend>
+            <p>
+                <label for="iano">Qual ano que você nasceu?:</label>
+                <input type="number" id="iano" name="ano"required min="1900" max="2025" oninput="calcIDade()">
+            </p>
+             <p>
+                 <label for="iidade">Sua idade é:</label>
+                <output id="iidade">0</output>
+             </p>
+        </fieldset>
+    </form>
+
+    <script>
+        function calcIDade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

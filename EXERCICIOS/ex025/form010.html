@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+     <h1>Meu deciomo formulario</h1>
+     <fieldset>
+        <legend>Operações matematicas</legend>
+         <form action="cadastro.php" method="get">
+            <outgroup label="Soma" >
+                <p>
+                    <label for="in1">Numero 1:</label>
+                    <input type="number" id="in1" name="n1" required max="100" min="0" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="in2">Numero 2:</label>
+                    <input type="number" id="in2" name="n2" required max="100" min="0" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma:</label>
+                    <output id="isoma">0</output>
+                </p>
+            </outgroup>
+            <p>
+                <label for="in3">Numero 3:</label>
+                <input type="number" id="in3" name="n3" required max="100" min="0" oninput="imult.innerHTML = Number(in3.value) * Number(in4.value)">
+            </p>
+            <p>
+                <label for="in4">Numero 4</label>
+                <input type="number" id="in4" name="4" required max="100" min="0" oninput="imult.innerHTML = Number(in3.value) * Number(in4.value) " >
+            </p>
+            <p>
+                <label for="imult">Multiplicação</label>
+                <output id="imult">0</output>
+            </p>
+            <p>
+                <label for="in5">Numero 5:</label>
+                <input type="number" id="in5" name="n5" required max="100" min="0" oninput="idiv.innerHTML = Number(in5.value) / Number(in6.value)">
+            </p>
+            <p>
+                <label for="in6">Numero 6:</label>
+                <input type="number" id="in6" name="n6" required max="100" min="0" oninput="idiv.innerHTML = Number(in5.value) / Number(in6.value)">
+            </p>
+            <p>
+                <label for="idiv">Divisão:</label>
+                <output id="idiv">0</output>
+            </p>
+     </fieldset>
+         <p>
+            <label for="iano">Em que ano Game of thrones acabou</label>
+            <input type="number" id="iano" name="ano" required min="2000" max="2025" oninput="tempo()">
+         </p>
+         <p>
+            <label for="ia">Faz :</label>
+            <output id="ia">0</output>
+         </p>
+
+
+
+
+     <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+     </p>
+     </form>
+     <script>
+        function tempo(){
+            let atual = new Date().getFullYear()
+            ia.innerHTML = Number(atual) - Number(iano.value)
+        }
+     </script>
+</body>
+</html>
