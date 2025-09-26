@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Cadastro aluno</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Campo aluno:</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" id="iname" name="nome" required minlength="3" maxlength="20" placeholder="Seu nome" autocomplete="name">
+            </p>
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" required min="0" max="100" oninput="calcIdade()" placeholder="Digite o ano em que nasceu"> <br>
+                <output id="icalc"> 0 é o seu ano de nascimento</output>
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" id="isenha" name="senha"required minlength="8" maxlength="20" placeholder="Sua senha" autocomplete="new-password" >
+            </p>
+            <p>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="isexm" name="sexo" > <label for="isexm">Masculino</label>
+                <input type="radio" id="isexf" name="sexo" > <label for="isexf">Feminino</label>
+            </p>
+            <p>
+                <label for="iest">Seu estado:</label>
+                <select name="est" id="iest">
+                    <optgroup label="Região Sudeste:">
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Sul:">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="DF">Distrito Federal</option>
+                        <option value="GO">Goias</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AM">Amapa</option>
+                        <option value="AZ">Amazona</option>
+                        <option value="PA">Para</option>
+                        <option value="RO">Rondonia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceara</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="Pi">Piaui</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+            
+                </select>
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" id="iemail" name="email" required placeholder="Seu email" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone/Celular:</label>
+                <input type="tel" id="itel" name="tel" required placeholder="(xx)xxxxxxx"pattern="^(\d{2}\)\d{4,5}-\d{4}$" autocomplete="tel">
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" id="iprof" name="prof" required placeholder="Sua profissão" list="ilistp">
+                <datalist id="ilistp">
+                    <option >Medico</option>
+                    <option >Advogado</option>
+                    <option >Engenheiro</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Campo prova</legend>
+            <p>
+                <label for="in1">Nota1:</label>
+                <input type="number" name="n1" id="in1" step="0.1" required oninput="calcMedia()">
+            </p>
+            <p>
+                <label for="in2">Nota2:</label>
+                <input type="number" name="n2" id="in2" step="0.1" required oninput="calcMedia()">
+            </p>
+            <p>
+                <label for="imedia">Media:</label>
+                <output id="imedia">0</output>
+            </p>
+            <p>
+                <h1 style="font-weight: 100;">Materias da prova</h1>
+                <input type="checkbox" id="ifis" name="fis"> <label for="ifis">Fisica</label>
+                <input type="checkbox" id="imat" name="mat"> <label for="imat">Matematica</label>
+                <input type="checkbox" id="iq" name="qui"> <label for="iq">Quimica</label> <br>
+                <input type="checkbox" id="ip" name="py"> <label for="ip">Python</label>
+                <input type="checkbox" id="iph" name="php"> <label for="iph">PHP</label>
+                <input type="checkbox" id="ijs" name="js"> <label for="ijs">Java-Script</label> <br>
+                <input type="checkbox" id="ima" name="ma"> <label for="ima">Metodos Ageis</label>
+                <input type="checkbox" id="imsql" name="msql"> <label for="imsql">Banco de Dados</label>
+                <input type="checkbox" id="iot" name="iot"> <label for="iot">IOT</label>
+            </p>
+            <p>
+                <label for="ipl">Periodo Letivo:</label>
+                <input type="month" id="ipl" name="pl" required value="2025-09">
+            </p>
+            <p>
+                <label for="idia">Dia:</label>
+                <input type="date" id="idia" name="dia" required value="2025-09-25">
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" id="ihora" name="hora" required value="13:00">
+            </p>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" id="icor" name="cor" required value="#0000FF">
+            </p>
+            <p>
+                <label for="isat">Satisfação:</label>
+                <input type="range" id="isat" name="sat" required min="1" max="10" value="5" oninput="inum.innerHTML = Number(isat.value)" >
+                <output id="inum">5</output>
+            </p>
+            <p>
+                <label for="iarq">Arquivo da prova:</label>
+                <input type="file" id="iarq" name="arq" required>
+            </p>
+            <p>
+                <label for="iav">Avalie-nos com uma sugestão:</label> <br>
+                <textarea name="iav" id="iav" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            icalc.innerHTML = Number(atual) - Number(idade.value)
+        }
+        function calcMedia(){
+            let media = 2
+            imedia.innerHTML = (Number(in1.value) + Number(in2.value)) / media
+        }
+    </script>
+</body>
+</html>
