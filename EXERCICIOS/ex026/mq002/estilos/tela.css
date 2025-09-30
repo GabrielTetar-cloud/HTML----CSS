@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*Dispositivo em pe(portrait*/
 
-*{
-    margin: 0px;
-    padding: 0px;
+body{
+    background:url(../imagens/cev-portrait.jpg) cover ;
 }
