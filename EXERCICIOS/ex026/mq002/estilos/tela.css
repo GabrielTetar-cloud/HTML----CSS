@@ -2,5 +2,5 @@
 /*Dispositivo em pe(portrait*/
 
 body{
-    background:url(../imagens/cev-portrait.jpg) cover ;
+    background-image:url(../imagens/cev-portrait.jpg) cover ;
 }

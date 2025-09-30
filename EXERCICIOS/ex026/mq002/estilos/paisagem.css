@@ -1,5 +1,5 @@
 @charset "UTF-8";
 /*Dispositivo deitado(landscape)*/
 body{
-   background: url(../imagens/cev-landscape.jpg) cover;
+   background-image: url(../imagens/cev-landscape.jpg) ;
 }
