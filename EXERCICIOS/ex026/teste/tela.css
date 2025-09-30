@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+main{
+    background-color: aqua;
+}
+header h1{
+    text-align: center;
+    background-color: rgb(3, 147, 147);
+}
+menu ul{
+   text-align: center;
+   background-color: aquamarine;
+}
+menu li{
+   display: inline-block;
+   background-color: rgb(4, 155, 105);
+   border-radius: 2px;
+}
+menu li:hover{
+    background-color: rgb(3, 48, 33);
+}
+article{
+    width: 700px;
+    /*display bock + margin auto deixa o conteudo no meio*/
+    display: block;
+    margin: auto;
+    size: 100%;
+}
