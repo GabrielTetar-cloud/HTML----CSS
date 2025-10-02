@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed;
+
+}
+h1{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 15px;
+    color: white;
+}
