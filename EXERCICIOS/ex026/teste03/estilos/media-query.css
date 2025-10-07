@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*demais versões*/
+@media print{
+    *{
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+    }
+}
