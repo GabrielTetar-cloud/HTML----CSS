@@ -1,5 +1,16 @@
 @charset "UTF-8";
 /*demais versões*/
+/* Typical Device Breakingpoint
+------------------------------------
+Pequenas telas: até 480px
+celular: de 480px ate 600px
+tablet :de 601px ate 1024px
+desktop: de 1025 ate 1280px
+
+grandes telas: 1280 para cima
+
+
+*/
 @media print{
     *{
         padding: 10px;

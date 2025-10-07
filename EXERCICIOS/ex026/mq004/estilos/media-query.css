@@ -1,13 +1,82 @@
 @charset "UTF-8";
 /*Para todas as versões demais*/
-@media screen {
-    
-}
+/*Typical Device breakingpoint
+-------------------
+pequenas telas: até 600px
+celular:de 600px até 768px
+tablet:de 768px até 992px
+desktop: de 992px até 1200px
+Grandes tela: acima de 1200px
+
+*/
 @media print{
     *{
-        padding: 10px;
-        margin: 10px;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 1.3em;
     }
+   body{
+    background-image: url(../imagens/back-print.jpg); /*desnecessario*/
+   
+   }
+   main{
+    width: 90vw;
+     border: 2px solid black;
+   }
+   main::after{
+    content: 'Essa impressão foi feita atraves do site gabriel.com';
+    text-decoration: overline;
+   }
+   main h1{
+    
+    text-shadow: none;
+    color: black;
+   }
+   img#iphone {display: none;}
+   img#itablet {display: none;}
+   img#iprint {display: block;}
+   img#ipc {display: none;}
+   img#itv {display: none;}
 }
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+   background-image:url(../imagens/back-tablet.jpg);
+   
+}
+img#iphone {display: none;}
+img#itablet {display: block;}
+img#iprint {display: none;}
+img#ipc {display: none;}
+img#itv {display: none;}
+}
+/*desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+    img#iphone {display: none;}
+    img#itablet {display: none;}
+    img#iprint {display: none;}
+    img#ipc {display: block;}
+    img#itv {display: none;}
+
+}
+/*telas grandes*/
+@media screen and (min-width: 1200px){
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#iphone {display: none;}
+    img#itablet {display: none}
+    img#iprint {display: none;}
+    img#ipc {display: none;}
+    img#itv {display: block;}
+}
+
+
+
