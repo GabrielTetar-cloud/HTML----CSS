@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media screen and (min-width:762px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+img#tablet{display: block;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+      img#phone{display: none;}
+img#tablet{display:none;}
+img#print{display: none;}
+img#pc{display: block;}
+img#tv{display: none;}
+}
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display: none;}
+img#tablet{display:none;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: block;}
+}
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+        text-shadow: none;
+    }
+    main h1{
+        font-size: 2em;
+        color: black;
+    }
+    
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content: 'Essa impressão foi feita traves do site gabriel.com';
+        text-decoration: overline;
+    }
+     img#phone{display: none;}
+img#tablet{display:none;}
+img#print{display: block;}
+img#pc{display: none;}
+img#tv{display: none;}
+}
