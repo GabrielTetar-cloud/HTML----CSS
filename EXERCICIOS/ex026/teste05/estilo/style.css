@@ -12,8 +12,20 @@ header > h1{
     padding: 10px;
     text-align: center;
 }
+span#menuburguer{
+    background-color: rgb(15, 14, 14);
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+span#menuburguer:hover{
+    color: black;
+    background-color: white;
+}
 menu{
-  display: block;
+  display: none;
 }
 menu > ul{
     list-style-type: none;
