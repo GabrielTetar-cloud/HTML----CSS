@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*trelas pequenas*/
+@media  screen  and(max-width:992px){
+    span#burguer{
+        display: block;
+    }
+
+}
+/*telas medias e grandes*/
+@media screen and (min-width:992px) {
+   span#burguer{
+    display: none;
+   }
+   menu{
+    display: block;
+   }
+   menu > ul > li {
+    display: inline-block;
+    width: 170px;
+   }
+   main{
+    width: 768px;
+   }
+}
+
