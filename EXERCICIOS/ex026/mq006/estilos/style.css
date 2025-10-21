@@ -1,0 +1,43 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ;
+    box-sizing: border-box;
+
+}
+html, body {
+    background-color: antiquewhite ;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+   
+}
+section#login{
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.589);
+}
+section#login > div#imagem{
+    background: antiquewhite url(../imagens/pexels-rok-romih-1746122-3367930.jpg) no-repeat;
+    height: 220px;
+    background-position: top right;
+    background-size: cover;
+   
+ 
+
+}
+section#login > div#Formulario{
+    padding: 24px;
+    margin: 7px;
+}

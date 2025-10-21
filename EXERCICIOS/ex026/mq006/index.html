@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario media query</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
    <main>
-    <section>
-        <h1>
-            Formulario de cadastro
-        </h1>
-        <div id="login">
-            foto
+    <section id="login" >
+        
+        <div id="imagem">
+           
 
         </div>
        <div id="Formulario">
@@ -35,16 +34,76 @@
              </p>
              <p>
                 <label for="iemail">Email</label>
-                <input type="email" id="iemail" name="email" required placeholder="SEu email" autocomplete="email">
+                <input type="email" id="iemail" name="email" required placeholder="Seu email" autocomplete="email">
              </p>
              <p>
                 <label for="isexo">Sexo</label>
+                <input type="radio" id="isexf" name="sexo"> <label for="isexf">Feminino</label>
+                <input type="radio" id="isexm" name="sexo"> <label for="isexm">MAsculino</label>
+                
              </p>
              <p>
                 <label for="iest">Estado</label>
+               <select name="est" id="iest">
+                 <optgroup label="Região Sudeste" >
+                   <option value="ES">Espirito Santo</option>
+                   <option value="MG">Minas Gerais</option>
+                   <option value="RJ">Rio de Janeiro</option>
+                   <option value="SP">São PAulo</option>
+                 </optgroup>
+
+                 <optgroup label="Região Sul">
+                  <option value="PR">Paraná</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="SC">Santa Catarina</option>
+
+                 </optgroup >
+                 
+                 <optgroup label="Região Centro-Oeste" >
+                  <option value="DF">Distrito Federal</option>
+                 <option value="GO">Goias</option>
+                 <option value="MT">Mato Grosso</option>
+                 <option value="MS">MAto Grosso do Sul</option>
+
+
+                 </optgroup>
+
+                 <optgroup label="Região Norte">
+                  <option value="AC">Acre</option>
+                  <option value="AM">Amapa</option>
+                  <option value="AZ">Amazonas</option>
+                  <option value="PA">PAra</option>
+                  <option value="RO">Rondonia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="TO">Tocantins</option>
+
+                 </optgroup>
+
+                 <optgroup label="REgião Nordeste">
+                  <option value="AL">Alagoas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceara</option>
+                  <option value="PB">Paraiba</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piaui</option>
+                  <option value="RN">Rio Grande do norte</option>
+                  <option value="SE">SErgipe</option>
+
+                 </optgroup>
+
+
+               </select>
+
              </p>
              <p>
                 <label for="iprof">Profissão</label>
+                <input type="text" id="iprof" name="prof" required placeholder="SUA profissão" list="iproflist">
+                <datalist id="iproflist">
+                      <option value="">Medicp</option>
+                      <option value="">Advogado</option>
+                      <option value="">Engenheiro</option>
+                      <option value="">Desenvolvedor</option>
+                </datalist>
              </p>
 
                 <p>
