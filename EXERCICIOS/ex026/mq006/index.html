@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario media query</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
    <main>
@@ -16,33 +19,40 @@
         </div>
        <div id="Formulario">
            <form action="cadastro.php" method="get" autocomplete="on">
-             <p>
+             <div class="campo">
+               <span class="material-icons">person</span>
                 <label for="inome">Nome:</label>
                 <input type="text" id="inome" name="nome" required  maxlength="20" minlength="3" placeholder="Seu nome" autocomplete="name">
-             </p>
-             <p>
+             </div>
+             <div  class="campo">
+               <span class="material-icons">vpn_key</span>
                 <label for="isenha">Senha</label>
                 <input type="password" id="isenha" name="senha" required maxlength="14" minlength="8" placeholder="Sua senha" autocomplete="new-password">
-             </p>
-             <p>
+             </div>
+             <div  class="campo">
+               <span class="material-icons">date_range</span>
                 <label for="idade">Idade</label>
                 <input type="number" id="idade" name="idade" required max="100" min="1" placeholder="Sua idade">
-             </p>
-             <p>
+             </div >
+             <div  class="campo">
+               <span class="material-icons">call</span>
                 <label for="itel">Telefone</label>
                 <input type="tel" id="itel" name="tel" required placeholder="(xx)xxxxxx" autocomplete="tel">
-             </p>
-             <p>
+             </div>
+             <div  class="campo">
+               <span class="material-icons">email</span>
                 <label for="iemail">Email</label>
                 <input type="email" id="iemail" name="email" required placeholder="Seu email" autocomplete="email">
-             </p>
-             <p>
+             </div>
+             <div  class="campo">
+               <span class="material-icons">group</span>
                 <label for="isexo">Sexo</label>
                 <input type="radio" id="isexf" name="sexo"> <label for="isexf">Feminino</label>
                 <input type="radio" id="isexm" name="sexo"> <label for="isexm">MAsculino</label>
                 
-             </p>
-             <p>
+             </div>
+             <div  class="campo">
+               <span class="material-icons">south_america</span>
                 <label for="iest">Estado</label>
                <select name="est" id="iest">
                  <optgroup label="Região Sudeste" >
@@ -94,22 +104,25 @@
 
                </select>
 
-             </p>
-             <p>
+             </div>
+             <div  class="campo">
+               <span class="material-icons">work</span>
                 <label for="iprof">Profissão</label>
-                <input type="text" id="iprof" name="prof" required placeholder="SUA profissão" list="iproflist">
+                <input type="text" id="iprof" name="prof" required placeholder="Sua profissão" list="iproflist">
                 <datalist id="iproflist">
-                      <option value="">Medicp</option>
+                      <option value="">Medico</option>
                       <option value="">Advogado</option>
                       <option value="">Engenheiro</option>
                       <option value="">Desenvolvedor</option>
                 </datalist>
-             </p>
+             </div>
 
-                <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </p>
+              
+                   
+                      <input type="submit" value="Enviar">
+                      <input type="reset" value="Limpar">
+                    
+                
            </form>
        </div>
     </section>

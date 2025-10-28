@@ -7,7 +7,7 @@
 
 }
 html, body {
-    background-color: antiquewhite ;
+    background-color:#012340 ;
     height: 100vh;
     width: 100vw;
 }
@@ -19,17 +19,19 @@ main{
 }
 section#login{
     background-color: white;
-    width: 300px;
+    width: 330px;
     position: absolute;
-    height: 500px;
+    height: 600px;
     left: 50%;
     top: 50%;
     transform: translate(-50% ,-50%);
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.589);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
-    background: antiquewhite url(../imagens/pexels-rok-romih-1746122-3367930.jpg) no-repeat;
+    background:#038C3E url(../imagens/pexels-rok-romih-1746122-3367930.jpg) no-repeat;
     height: 220px;
     background-position: top right;
     background-size: cover;
@@ -37,7 +39,42 @@ section#login > div#imagem{
  
 
 }
-section#login > div#Formulario{
-    padding: 24px;
-    margin: 7px;
+div.campo{
+    margin: 5px 0px;
+    background-color: #038C3E;
+    display: block;
+    width: 100%;
+   
+    
+
+}
+section#login > div#Formulario  input[type=submit]{
+    display: block;
+    background-color: #062441;
+    width: 100%;
+    color: white;
+    margin-top: 5px;
+    height: 35px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section#login > div#Formulario  input[type=submit]:hover{
+     background-color: #074a88 ;
+}
+section#login > div#Formulario  input[type=reset]{
+    display: block;
+    font-size: 1em;
+    background-color: #54adfb;
+    width: 100%;
+    height: 35px;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+section#login > div#Formulario input[type=reset]:hover{
+    background-color:#3e719e ;
 }
