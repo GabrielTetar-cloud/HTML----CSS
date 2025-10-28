@@ -50,3 +50,8 @@ section#login > div#form{
     padding: 10px;
     margin: 10px;
 }
+section#login > div#form > input[type=submit]{
+    height: 20px;
+    width: 100%;
+    border-radius: 2px;
+}

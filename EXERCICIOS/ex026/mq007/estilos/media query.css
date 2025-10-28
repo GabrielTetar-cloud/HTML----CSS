@@ -8,6 +8,9 @@ telas grandes
 ]*/
 
 @media screen  and (min-width:768px) and(max-width:992px) {
+    body{
+        background: linear-gradient(to top,#F28D9F,#0568A6);
+    }
     main > section#login{
         width: 70%;
         height: 90%;
@@ -21,11 +24,16 @@ telas grandes
     }
      section#login > div#form{
         float: right;
+        width: 37%;
+        height: 100%;
     }
     
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:993px){
+    body{
+        background: linear-gradient(to top,#F28D9F,#0568A6);
+    }
       main > section#login{
         width: 990px;
        
@@ -33,11 +41,13 @@ telas grandes
       section#login > div#imagem{
         width: 50%;
         float: right;
+        height: 100%;
 
       }
       section#login > div#form{
-        width: 50%;
+        width: 47%;
         float: left;
+        height: 100%;
       }
 
 }
