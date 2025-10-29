@@ -7,12 +7,12 @@ telas grandes
 
 ]*/
 
-@media screen  and (min-width:768px) and(max-width:992px) {
+@media screen  and (min-width:768px) and (max-width:992px) {
     body{
         background: linear-gradient(to top,#F28D9F,#0568A6);
     }
     main > section#login{
-        width: 70%;
+        width: 85%;
         height: 90%;
 
     }
@@ -23,10 +23,19 @@ telas grandes
         height: 100%;
     }
      section#login > div#form{
-        float: right;
+       float: right;
         width: 37%;
         height: 100%;
     }
+    form > input[type=submit]{
+        height: 50px;
+        margin: 5px;
+      }
+      form > input[type=reset]{
+        height: 50px;
+        margin: 5px;
+      }
+
     
 }
 
@@ -40,7 +49,7 @@ telas grandes
       }
       section#login > div#imagem{
         width: 50%;
-        float: right;
+     float: right;
         height: 100%;
 
       }
@@ -48,6 +57,19 @@ telas grandes
         width: 47%;
         float: left;
         height: 100%;
+      }
+      div#campo{
+        padding: 5px;
+      }
+      form > input[type=submit]{
+        height: 60px;
+        padding: 5px;
+        margin: 5px ;
+      }
+      form > input[type=reset]{
+        height: 60px;
+        padding: 5px;
+        margin: 5px;
       }
 
 }
