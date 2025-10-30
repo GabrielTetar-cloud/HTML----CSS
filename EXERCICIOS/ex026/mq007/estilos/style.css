@@ -61,7 +61,7 @@ div#campo{
     cursor: pointer;
     
 }
-div.campo > span{
+div.campo > span {
     color: white;
     background-color: black;
     font-size: 2em;
