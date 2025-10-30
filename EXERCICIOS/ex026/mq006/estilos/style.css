@@ -2,7 +2,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: ;
+    font-family:Arial, Helvetica, sans-serif ;
     box-sizing: border-box;
 
 }
@@ -21,7 +21,7 @@ section#login{
     background-color: white;
     width: 330px;
     position: absolute;
-    height: 600px;
+    height: 615px;
     left: 50%;
     top: 50%;
     transform: translate(-50% ,-50%);
@@ -44,10 +44,38 @@ div.campo{
     background-color: #038C3E;
     display: block;
     width: 100%;
-   
-    
-
+   }
+   /*configuração do icone*/
+div.campo > span{
+    color: white;
+    background-color: black;
+    width: 40px;
+   padding: 3px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    background-color:#02421e ;
 }
+/*configuração da cauxa*/
+div.campo > input{
+    background-color:#012340 ;
+    font-size: 1em;
+    height:100%;
+    padding: 2px;
+    width: calc(100%-40px);
+    border: 0px;
+    border-radius: 8px;
+}
+div.campo > input:focus-within{
+    background: white;
+}
+div.campo > label{
+    display: none;
+}
+.especial{
+    display: block;
+}
+
+
 section#login > div#Formulario  input[type=submit]{
     display: block;
     background-color: #062441;

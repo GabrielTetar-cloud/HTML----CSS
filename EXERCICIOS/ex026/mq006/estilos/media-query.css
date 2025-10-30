@@ -19,6 +19,12 @@
     div.campo{
     border-radius: 3px;
   }
+  div.campo>span{
+    padding: 5px;
+  }
+  div.campo>input{
+    padding: 5px;
+  }
   section#login > div#Formulario input[type=submit] {
     height: 60px;
     
@@ -48,6 +54,12 @@
     }
      div.campo{
     border-radius:5px;
+  }
+  div.campo>span{
+    padding: 5px;
+  }
+  div.campo>input{
+    padding: 5px;
   }
    section#login > div#Formulario input[type=submit] {
       height: 60px;

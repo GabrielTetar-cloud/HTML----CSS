@@ -61,6 +61,12 @@ div#campo{
     cursor: pointer;
     
 }
+div.campo > span{
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    padding: 6px;
+}
 
 form > input[type=submit]{
     height: 40px;
