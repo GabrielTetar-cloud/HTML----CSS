@@ -60,6 +60,7 @@ telas grandes
       }
       div#campo{
         padding: 5px;
+        height: 35px;
       }
       form > input[type=submit]{
         height: 60px;

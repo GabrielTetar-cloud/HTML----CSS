@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querie.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+
+            </div>
+            <div id="form">
+                <h1>
+                    Seja bem vindo(a)faça o registro para prosseguir
+                </h1>
+                <form action="cadastro.php" autocomplete="on" method="post">
+                    <div id="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <label for="inome">Nome</label>
+                        <input type="text" required id="inome" placeholder="Seu nome" minlength="3" maxlength="20" autocomplete="name">
+                    </div>
+                    <div  id="campo">
+                         <span class="material-symbols-outlined">vpn_key</span>
+                        <label for="isenha">Senha</label>
+                        <input type="password" id="isenha" required placeholder="Sua senha" minlength="8" maxlength="16" autocomplete="new-password">
+                    </div  id="campo">
+                    <div id="campo">
+                         <span class="material-symbols-outlined">calendar_clock</span>
+                        <label for="idade">Idade</label>
+                        <input type="number" min="1" max="110" required id="idade" placeholder="Sua idade">
+                    </div>
+                    <div  id="campo">  
+                         <span class="material-symbols-outlined">group</span>
+                        <label for="isex">Sexo:</label>
+                        <input type="radio" id="isexof" name="isex"> <label for="isexof">Feminino</label>
+                        <input type="radio" id="isexom" name="isex"> <label for="isexom">Masculino</label>
+                    </div>
+                    <div  id="campo">
+                         <span class="material-symbols-outlined">south_america</span>
+                        <label for="iestado">Estado</label>
+                       <select name="iest" id="iestado">
+                          <optgroup label="Região Sul">
+                                 <option value="PR">Parana</option>
+                                 <option value="RS">Rio Grande do Sul</option>
+                                 <option value="SC">Santa Catarina</option>
+                          </optgroup>
+                          <optgroup label="Região Sudeste">
+                            <option value="ES">Espirito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de janeiro</option>
+
+                          </optgroup>
+                          <optgroup label="Região Centro Oeste">
+                            <option value="DF">Distrito Federal</option>
+                            <option value="GO">Goias</option>
+                            <option value="MT">MAto Grosso</option>
+                            <option value="MS">MAto Grosso do Sul</option>
+                          </optgroup>
+                          <optgroup label="REgião Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AM">Amapa</option>
+                            <option value="AZ">Amazonas</option>
+                            <option value="PA">PAra</option>
+                            <option value="RO">Rondonia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+
+                          </optgroup>
+                          <optgroup label="Região Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">CEara</option>
+                            <option value="MA">MAranhão</option>
+                            <option value="PB">Paraiba</option>
+                            <option value="PE">PErnambuco</option>
+                            <option value="PI">Piaui</option>
+                
+                            <option value="RN">Rio grande do norte</option>
+                            
+                            <option value="SE">SErgipe</option>
+
+                          </optgroup>
+                          
+
+
+
+                       </select>
+                    </div>
+                    <div  id="campo">
+                         <span class="material-symbols-outlined">email</span>
+                        <label for="iemail">Email</label>
+                        <input type="email" id="iemail" name="email" required placeholder="SEu email" autocomplete="email">
+                    </div>
+                    <div  id="campo">
+                         <span class="material-symbols-outlined">call</span>
+                        <label for="itel">Telefone</label>
+                        <input type="tel" id="itel" name="tel" required placeholder="(xx)xxxxx-xxxx" autocomplete="tel">
+                    </div>
+                    <div  id="campo">
+                         <span class="material-symbols-outlined">work</span>
+                        <label for="iprof">Profissão</label>
+                        <input type="text" id="iprof" placeholder="Sua Profissão" required list="ilist">
+                        <datalist id="ilist">
+                            <option value="">Advogado(a)</option>
+                            <option value="">Medico(a)</option>
+                            <option value="">Arquito(a)</option>
+
+                        </datalist>
+                    </div>
+                    
+                    <div> 
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+
+        </section>
+    </main>
+</body>
+</html>
