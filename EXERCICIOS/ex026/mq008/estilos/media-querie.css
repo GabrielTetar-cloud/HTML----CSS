@@ -27,6 +27,14 @@ telas grandes mais de 992px
     div#campo{
         font-size: 1.3em;
     }
+    form > input[type=submit]{
+            height: 50px;
+            padding: 5px;
+    }
+    form > input[type=reset]{
+       height: 50px;
+       padding: 5px;
+    }
 
 }
 
@@ -56,6 +64,14 @@ telas grandes mais de 992px
     }
     div#campo{
         font-size: 1.3em;
+    }
+    form > input[type=submit]{
+        height: 50px;
+        padding: 5px;
+    }
+    form > input[type=reset]{
+        height: 50px;
+        padding: 5px;
     }
     
 }
