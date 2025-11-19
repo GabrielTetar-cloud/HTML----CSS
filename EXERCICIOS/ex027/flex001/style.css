@@ -1,0 +1,11 @@
+div.container{
+    background-color:blueviolet ;
+    display: flex;
+    
+}
+div.item{
+flex: auto;
+background-color: aquamarine;
+text-align: center;
+border: 1px solid black;
+}
