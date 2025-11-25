@@ -1,7 +1,7 @@
 div.container{
     background-color: blueviolet;
     display: flex;
-    flex-direction:column-reverse;
+   flex-flow:row-reverse wrap-reverse;
     text-align: center;
 
 }
@@ -9,4 +9,5 @@ div.item{
     background-color: aquamarine;
     padding: 10px;
     border: 1px solid black;
+    flex: auto;
 }
