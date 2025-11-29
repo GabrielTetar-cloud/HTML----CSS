@@ -12,7 +12,14 @@ body,html{
 main{
     height: 100vh;
     width: 100vw;
+    background-color: lightblue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-div#form{
-    flex: auto;
+section#form{
+   background-color: aquamarine;
+   height: 300px;
+   width: 300px;
 }
