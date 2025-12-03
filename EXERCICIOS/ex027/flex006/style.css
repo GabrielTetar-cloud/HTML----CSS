@@ -1,0 +1,13 @@
+div.container{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow:column wrap;
+    height: 400px;
+    align-content:space-around;
+}
+div.item{
+    padding: 40px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+}
