@@ -2,8 +2,9 @@ div.container{
     display: flex;
     height: 190px;
     justify-content: space-between;
+   
     background-color: aquamarine;
-   flex-flow: row wrap;
+   flex-flow: column-reverse wrap-reverse;
 }
 div.item{
     background-color: blueviolet;
