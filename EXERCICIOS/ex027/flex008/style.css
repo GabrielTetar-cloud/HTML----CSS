@@ -1,0 +1,42 @@
+div.container{
+    background-color: rgb(52, 178, 75);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 300px;
+}
+div.item{
+   
+    padding: 20px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+}
+div#i1{
+    align-self: auto;
+
+}
+div#i2{
+  align-self: flex-end;
+}
+
+div#i3{
+   align-self: center;
+}
+div#i4{
+  align-self: stretch;
+}
+div#i5{
+   align-self: flex-start;
+}
+
+div#i6{
+    align-self: center;
+}
+div#i7{
+   align-self: stretch;
+}
+div#i8{
+    
+}
