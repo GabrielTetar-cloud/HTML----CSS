@@ -1,0 +1,15 @@
+@charset "UTF-8";
+div.container{
+    display: flex;
+    background-color: darkblue;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-evenly;
+   
+}
+div.item{
+    background-color: darkcyan;
+    padding: 10px;
+    border: 2px solid black;
+    flex-basis: 150px
+}
