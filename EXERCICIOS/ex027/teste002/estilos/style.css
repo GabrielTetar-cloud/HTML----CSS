@@ -2,51 +2,54 @@
 section.container{
     background-color: aquamarine;
     display: flex;
-    height: 400px;
-    flex-flow: row wrap;
-    align-items: center;
+   height: 400px;
+    flex-flow:row wrap;
+    align-content: space-evenly;
+    justify-content: flex-start;
    
     
 }
 div.item{
     background-color: bisque;
     padding: 30px;
+    flex-basis: 150px;
 }
 div#i1{
-    order: 0;
-    align-self: auto;
+    order: -5;
+    align-self: flex-end
 
 }
 div#i2{
-    order: 7;
-    align-self: flex-start;
-    
-}
-div#i3{
-    order: -2;
-    align-self: stretch;
-}
-div#i4{
     order: 0;
-    align-self: flex-end;
-}
-div#i5{
-    order: -5;
     align-self: auto;
 }
-div#i6{
+div#i3{
     order: 3;
+    align-self: center;
+}
+div#i4{
+    order: -2;
+    align-self: stretch;
+    
+}
+div#i5{
+    order: 0;
+    align-self: auto;
+}
+
+div#i6{
+    order: 5;
     align-self: flex-end;
     
 }
-
 div#i7{
-    order: 0;
-    align-items: stretch;
+    order: -1;
+    align-self: stretch;
+    
 }
 div#i8{
-    order: -1;
-    align-self: flex-start;
+    order: 0;
+    align-self: center;
     
 }
 div#i9{
@@ -55,21 +58,19 @@ div#i9{
     
 }
 div#i10{
-    order: -1;
-    align-items: stretch;
+    order: -3;
+    align-self: flex-end;
     
 }
-
 div#i11{
     order: 0;
-    align-self: flex-start;
+    align-self: center;
 }
 div#i12{
     order: 2;
-    align-self: flex-end;
+    align-self: stretch;
 }
 div#i13{
-    order: 4;
-    align-self: auto;
-    
+    order: -9;
+    align-self: flex-end
 }
