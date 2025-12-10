@@ -1,0 +1,13 @@
+div.container{
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.item{
+    flex-basis: 300px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
