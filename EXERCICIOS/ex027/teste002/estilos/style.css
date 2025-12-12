@@ -12,7 +12,8 @@ section.container{
 div.item{
     background-color: bisque;
     padding: 30px;
-    flex-basis: 150px;
+    flex: 2 1 150px;
+    border: 1px solid black;
 }
 div#i1{
     order: -5;

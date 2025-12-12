@@ -10,6 +10,7 @@ div.item{
     background-color:darkblue;
     padding: 20px;
     border: 1px solid black;
-    flex-basis: 100px;
+  
+    flex: auto;
     
 }
