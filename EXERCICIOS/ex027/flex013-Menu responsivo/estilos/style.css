@@ -21,12 +21,17 @@ header{
     align-items: center;
 }
  header > h1{
+    /*
     border: 1px dashed black;
+    */
     flex: 0 0 200px;
+    text-shadow: 1px 2px 0px black;
     
  }
 header > nav{
+    /*
     border: 1px dashed black;
+    */
     background-color: rgb(0, 212, 212);
    display: flex;
    flex-flow: row wrap;

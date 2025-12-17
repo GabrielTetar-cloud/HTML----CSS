@@ -12,7 +12,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    padding: 8px;
+    padding: 10px;
      background-color: #6c71d7;
      color: white;
      display: flex;
@@ -28,7 +28,7 @@ header > nav {
    flex-flow: row wrap;
    justify-content: flex-end;
 }
-header> nav > h1 {
+header > h1 {
    flex: 1 1 200px;
     border: 1px dashed black;
 
@@ -52,5 +52,9 @@ main{
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.614);
     border: 10px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     
 }
