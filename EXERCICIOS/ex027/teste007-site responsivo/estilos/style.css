@@ -34,7 +34,7 @@ section.flex{
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;
-    border: 1px dashed green;
+  
 }
 article.media-text{
     display: flex;
